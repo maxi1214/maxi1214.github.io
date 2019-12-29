@@ -202,7 +202,7 @@ section.bottom p:nth-of-type(3){
 	}
 	section.KV{
 		background: url(../img/kv_m.jpg) center center fixed;
-		background-size: cover;
+		background-size: contain;
 	}
 	.title{
 		background: none;
