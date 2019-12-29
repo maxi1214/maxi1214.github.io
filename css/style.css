@@ -207,6 +207,7 @@ section.bottom p:nth-of-type(3){
 	.title{
 		background: none;
 		width: 75%;
+		position: absolute;
 	}
 	.title img{
 		margin: 0 auto;
