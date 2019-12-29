@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+body, html{
+	width: 100%;
+	height:100%;
+}
+body{
+	font-family: 'Lato', 'Noto Sans TC', Arial, Helvetica, sans-serif, 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei';
+	line-height: 1.5;
+	font-size: 16px;
+	-webkit-overflow-scrolling:touch;
+	color: #333;
+	letter-spacing: 1px;
+}
+section{
+	width: 100%;
+	position: relative;
+	padding: 8% 0;
+	text-align: center;
+}
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+h1{
+	margin: 0 auto;
+	width: 75%;
+}
+h2{
+	margin-top: 10px;
+}
+.line_w, .line_b{
+	width: 70px;
+	height: 1px;
+	background: #fff;
+	margin: 2% auto;
+}
+.line_b{
+	background: #333;
+}
+/*=========首頁=========*/
+section.KV{
+	height: 100%;
+	background: url(../img/kv.jpg) center center fixed;
+	background-size: cover;
+}
+
+.title{
+	width: 40%;
+	background: url(../img/dia.gif) center center no-repeat;
+	background-size: 100% auto;
+	position: fixed;
+	top: 15%;
+	left: 8%;
+	padding: 6% 6%;
+	text-align: center;
+}
+.title p:nth-of-type(1){
+	width: 100%;
+}
+.title p:nth-of-type(2){
+	width: 83%;
+	margin: 2% auto;
+}
+.feat{
+	position: fixed;
+	right: 2%;
+	bottom: 2%;
+	width: 15%;
+}
+@media only screen and (max-width : 1440px) {
+	.title{
+		top: 10%;
+		padding: 10% 6%;
+	}
+	.title p:nth-of-type(2){
+		width: 90%;
+	}
+}
+@media only screen and (max-width : 1024px) {
+	.title{
+		width: 50%;
+		top: 15%;
+		padding: 15% 6%;
+	}
+}
+/*=========照片區=========*/
+section.photo{
+	background-color: #fff;
+}
+
+section.photo h1{
+	max-width: 442px;
+}
+section.photo ul{
+	max-width:1200px;
+	width: 85%;
+	margin: 3% auto; 
+}
+section.photo ul li{
+	display: inline-block;
+	vertical-align: top;
+	margin: 2%;
+}
+section.photo ul li img{
+	-moz-box-shadow:10px 15px 30px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow:10px 15px 30px 0px rgba(0,0,0,0.5);
+	box-shadow:10px 15px 30px 0px rgba(0,0,0,0.5);
+}
+section.photo ul li:nth-of-type(2){
+	padding-top: 5%;
+}
+/*=========資訊=========*/
+section.info{
+	background: #393848;
+	color: #fff;
+	padding-bottom: 0;
+}
+section.info h1{
+	max-width: 420px;
+}
+
+p.topic{
+	margin-top: 50px;
+	font-size: 2.5rem;
+	color: #c5c5c5;
+	font-weight: 100;
+}
+p.txt{
+	font-size: 1.6rem;
+	margin-top: 10px;
+}
+p.txt span{
+	display: block;
+	font-size: 1rem;
+	font-weight: 100;
+}
+.map{
+	margin-top: 8%;
+}
+.map iframe{
+	display: block;
+}
+/*=========問卷=========*/
+section.survay h1{
+	max-width: 600px;
+}
+section.survay iframe{
+	margin-top: 3%;
+}
+.sha{
+	max-width: 1000px;
+	width: 80%;
+	margin: 3% auto;
+}
+.ask{
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+}
+/*=========下方=========*/
+section.bottom{
+	height: 400px;
+	background: url(../img/bottom.jpg) top center no-repeat fixed;
+	background-position: center bottom;
+	color: #fff;
+}
+section.bottom p:nth-of-type(1){
+	font-size: 2rem;
+}
+section.bottom p:nth-of-type(2){
+	font-size: 1.5rem;
+}
+section.bottom p:nth-of-type(3){
+	font-size: 0.8rem;
+	margin-top: 5%;
+	font-weight: 100;
+}
+
+
+
+@media only screen and (max-width : 600px) {
+    section{
+    	padding: 15% 0 20% 0;
+    }
+    .map{
+		margin-top: 14%;
+	}
+	.line_b{
+		margin: 5% auto;
+	}
+	section.KV{
+		background: url(../img/kv_m.jpg) center center fixed;
+		background-size: cover;
+	}
+	.title{
+		background: none;
+		width: 75%;
+		top: -2%;
+	}
+	.title img{
+		margin: 0 auto;
+	}
+	.title p:nth-of-type(2){
+		display: none;
+	}
+	.feat{
+		top: 15%;
+		right: 10%;
+		width: 38%;
+	}
+	section.photo ul{
+		margin-top: 8%; 
+	}
+	section.survay h2{
+		margin-bottom: 10%;
+	}
+	section.bottom{
+		background: url(../img/bottom_m.jpg) bottom center no-repeat fixed;
+		background-size: contain;
+		height: 300px;
+	}
+	p.topic{
+		font-size: 2rem;
+	}
+	p.txt{
+		font-size: 1.2rem;
+	}
+	p.txt span{
+		font-size: 0.8rem;
+	}
+}
+@media only screen and (max-width : 375px) {
+	.title{
+		top: 1%;
+	}
+	.feat{
+		top: 18%;
+	}
+}
