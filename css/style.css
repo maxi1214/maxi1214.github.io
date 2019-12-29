@@ -204,6 +204,18 @@ section.bottom p:nth-of-type(3){
 		background: url(../img/kv_m.jpg) top center no-repeat fixed;
 		background-size: 100%;
 	}
+	section.KV:before {
+		content: ' ';
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(path/to/image) 
+		center 0 no-repeat;
+		background-size: cover;
+	}
 	.title{
 		background: none;
 		width: 75%;
