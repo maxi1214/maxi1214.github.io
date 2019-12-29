@@ -216,6 +216,7 @@ section.bottom p:nth-of-type(3){
 		display: none;
 	}
 	.feat{
+		position: absolute;
 		width: 38%;
 	}
 	section.photo ul{
@@ -244,7 +245,7 @@ section.bottom p:nth-of-type(3){
 		top: -2%;
 	}
 	.feat{
-		top: 20%;
+		top: 18%;
 	}
 }
 @media only screen and (max-width : 375px) {
