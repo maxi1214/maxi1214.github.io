@@ -201,8 +201,8 @@ section.bottom p:nth-of-type(3){
 		margin: 5% auto;
 	}
 	section.KV{
-		background: url(../img/kv_m.jpg) center center fixed;
-		background-size: contain;
+		background: url(../img/kv_m.jpg) top center no-repeat fixed;
+		background-size: 100%;
 	}
 	.title{
 		background: none;
