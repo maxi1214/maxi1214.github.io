@@ -6,8 +6,45 @@
 	<title>Ian & Ivy Wedding</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="favicon.ico" rel="image_src">
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="img/favicon.ico" rel="image_src">
+	<!-- <script type="text/javascript">
+	//經緯度可從 http://www.mygeoposition.com/ 取得
+	lat = 25.0444201; //緯度
+	lng = 121.5224938; //經度
+	function initialize() {
+		var latlng = new google.maps.LatLng(lat, lng);
+		//zoom 參數可控制地圖預設縮放大小
+		var settings = {
+			zoom: 16,
+			center: latlng,
+			mapTypeControl: false,
+			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+			navigationControl: false,
+			navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scaleControl: false,
+			panControl: false,
+			zoomControl: false
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+		//google.maps.Size = logo.png 圖片尺寸
+		//google.maps.Point = logo.png 錨點位置 (尖端部份)
+		var companyLogo = new google.maps.MarkerImage('../img/location.png',
+			new google.maps.Size(32,32),
+			new google.maps.Point(0,0),
+			new google.maps.Point(16,16)
+		);
+		var companyPos = new google.maps.LatLng(lat, lng);
+		//title = 滑鼠游標停在 logo.png 時出現的說明文字
+		var companyMarker = new google.maps.Marker({
+			position: companyPos,
+			map: map,
+			icon: companyLogo,
+			title:"GAP"
+		});
+	}
+</script> -->
 </head>
 <body>
 	<!--首頁-->
@@ -33,7 +70,8 @@
 		<p class="topic">地點</p>
 		<p class="txt">台北喜來登 B1 福廳<span>台北市忠孝東路一段12號</span></p>
 		<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.690450698756!2d121.52001766537877!3d25.04457704402053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a971b0535025%3A0x8e1cbeae7a446e49!2sSheraton%20Grand%20Taipei%20Hotel!5e0!3m2!1szh-TW!2stw!4v1577613458238!5m2!1szh-TW!2stw" width="100%" height="560" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.690450698756!2d121.52001766537877!3d25.04457704402053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a971b0535025%3A0x8e1cbeae7a446e49!2sSheraton%20Grand%20Taipei%20Hotel!5e0!3m2!1szh-TW!2stw!4v1577613458238!5m2!1szh-TW!2stw" width="100%" height="560" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+		<iframe width="100%" height="560" frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=Sheraton Grand Taipei Hotel&z=18&output=embed&t='></iframe>
 	</div>
 	</section>
 	<!--問卷-->
@@ -53,4 +91,5 @@
 		<p>PS.請著正式服裝，讓我們一起帥帥水水入鏡吧</p>
 	</section>
 </body>
+
 </html>
