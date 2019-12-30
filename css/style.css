@@ -224,7 +224,13 @@ section.bottom p:nth-of-type(3){
 		right: 10%;
 	}
 	section.photo ul{
-		margin-top: 8%; 
+		margin-top: 8%;
+		width: 85%;
+	}
+	section.photo ul li{
+		display: block;
+		margin: 2%;
+		width: 100%;
 	}
 	section.survay h2{
 		margin-bottom: 10%;
